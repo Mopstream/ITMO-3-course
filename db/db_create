@@ -1,0 +1,41 @@
+create table zoo (
+    id serial primary key,
+    director text not null
+);
+
+create table problem (
+    id serial primary key,
+    type text not null
+);
+
+create table zoo_problem (
+    zoo_id int not null references zoo(id) on update cascade on delete cascade,
+    problem_id int not null references problem(id) on update cascade on delete cascade,
+    primary key (zoo_id, problem_id)
+);
+
+
+create table animal (
+    id serial primary key,
+    name text not null
+);
+
+create table zoo_animal (
+    zoo_id int not null references zoo(id) on update cascade on delete cascade,
+    animal_id int not null references animal(id) on update cascade on delete cascade,
+    primary key (zoo_id, animal_id)
+);
+
+create table animal_info (
+    animal_id serial primary key references animal(id) on update cascade on delete cascade,
+    health int not null check (health >= 0),
+    happiness float not null check (happiness > 0),
+    feeding time not null
+);
+
+
+
+
+
+
+
