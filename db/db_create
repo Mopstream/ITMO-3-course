@@ -1,11 +1,15 @@
 create table zoo (
     id serial primary key,
-    director text not null
+    director text not null,
+    description text,
+    email text
 );
 
 create table problem (
     id serial primary key,
-    type text not null
+    type text not null,
+    risk float check (risk >=0 and risk <= 1),
+    strategy text
 );
 
 create table zoo_problem (

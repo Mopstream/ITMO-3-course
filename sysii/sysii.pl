@@ -1,5 +1,6 @@
-% facts
+%facts
 
+%fractons
 fraction('Conflux').
 fraction('Castle').
 fraction('Tower').
@@ -8,6 +9,7 @@ fraction('Fortress').
 fraction('Rampart').
 fraction('Inferno').
 
+%side
 good('Castle').
 good('Tower').
 good('Rampart').
@@ -15,7 +17,7 @@ good('Rampart').
 evil('Inferno').
 evil('Dungeon').
 
-
+%units
 fraction_unit('Pixie', 'Conflux').
 fraction_unit('Air elemental', 'Conflux').
 fraction_unit('Water elemental', 'Conflux').
@@ -72,16 +74,16 @@ fraction_unit('Pit fiend', 'Inferno').
 fraction_unit('Efreet', 'Inferno').
 fraction_unit('Devil', 'Inferno').
 
-
+%rules
 same_fraction_unit(X, X).
 same_fraction_unit(X, Y) :- fraction_unit(X, Z), fraction_unit(Y, Z).
 
-enemies(X, Y, fact) :- good(X), evil(Y).
-enemies(Y, X) :- enemies(X, Y, fact).
+enemies(X, Y, fact) :- (good(X), evil(Y)); (good(Y), evil(X)) .
+enemies(X, Y) :- fraction(X), fraction(Y),enemies(X, Y, fact).
 
 neutral(X) :- not(good(X)), not(evil(X)), fraction(X).
 
-enemies_unit(X,Y) :- fraction_unit(X, Xfrac), fraction_unit(Y, Yfrac), enemies(Xfrac, Yfrac).
+enemies_unit(X, Y) :- fraction_unit(X, Xfrac), fraction_unit(Y, Yfrac), enemies(Xfrac, Yfrac).
 
 good_unit(X) :- fraction_unit(X, Xfrac), good(Xfrac).
 evil_unit(X) :- fraction_unit(X, Xfrac), evil(Xfrac).

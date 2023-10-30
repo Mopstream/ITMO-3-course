@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/lab1.dir/pingpong.c.o -o lab1 

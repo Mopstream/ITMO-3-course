@@ -76,6 +76,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mopstream/edu/itmo/llp/test/includes/api/element.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/mopstream/edu/itmo/llp/test/includes/api/query.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/mopstream/edu/itmo/llp/test/includes/api/schema.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/home/mopstream/edu/itmo/llp/test/main.c">
 			<Option target="test"/>
 		</Unit>

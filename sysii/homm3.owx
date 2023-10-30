@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mopstream/ontologies/2023/8/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mopstream/ontologies/2023/8/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/mopstream/ontologies/2023/8/untitled-ontology-9/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#evil_fraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fraction_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#good_fraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#neutral_fraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#side"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_side"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air_Elemental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Archer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basilisk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beholder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cavalier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Centaur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Conflux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Demon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dendroid_Guard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Devil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dungeon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dwarf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Earth_Elemental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Efreet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fire_Elemental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Firebird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fortress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Genie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gnoll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gorgon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green_Dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gremlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Griffin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harpy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hell_Hound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hydra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Imp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inferno"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lizardman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manticore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medusa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Minotaur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neutral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pegasus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pikeman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pit_Fiend"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pixie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Psychic_Elemental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rampart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red_Dragon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serpent_Fly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stone_Gargoyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stone_Golem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swordsman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Troglodyte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unicorn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water_Elemental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wood_Elf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wyvern"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#evil_fraction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fraction"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_side"/>
+                <NamedIndividual IRI="#Evil"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#good_fraction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fraction"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_side"/>
+                <NamedIndividual IRI="#Good"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#neutral_fraction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#fraction"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#has_side"/>
+                <NamedIndividual IRI="#Neutral"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#evil_fraction"/>
+        <Class IRI="#fraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#good_fraction"/>
+        <Class IRI="#fraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#neutral_fraction"/>
+        <Class IRI="#fraction"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#evil_fraction"/>
+        <Class IRI="#good_fraction"/>
+        <Class IRI="#neutral_fraction"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Air_Elemental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Angel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Archer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Basilisk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Beholder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Cavalier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Centaur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Demon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Dendroid_Guard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Devil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Dwarf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Earth_Elemental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Efreet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#side"/>
+        <NamedIndividual IRI="#Evil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Fire_Elemental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Firebird"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Genie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Giant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Gnoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Gog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#side"/>
+        <NamedIndividual IRI="#Good"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Gorgon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Green_Dragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Gremlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Griffin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Harpy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Hell_Hound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Hydra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Imp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Lizardman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Mage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Manticore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Medusa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Minotaur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Monk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Naga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#side"/>
+        <NamedIndividual IRI="#Neutral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Pegasus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Pikeman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Pit_Fiend"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Pixie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Psychic_Elemental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Red_Dragon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Serpent_Fly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Stone_Gargoyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Stone_Golem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Swordsman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Troglodyte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Unicorn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Water_Elemental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Wood_Elf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fraction_unit"/>
+        <NamedIndividual IRI="#Wyvern"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Air_Elemental"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Angel"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Archer"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Basilisk"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Beholder"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Castle"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Cavalier"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Centaur"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Conflux"/>
+        <NamedIndividual IRI="#Neutral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Demon"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Dendroid_Guard"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Devil"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Dungeon"/>
+        <NamedIndividual IRI="#Evil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Dwarf"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Earth_Elemental"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Efreet"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Fire_Elemental"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Firebird"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Fortress"/>
+        <NamedIndividual IRI="#Neutral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Genie"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Giant"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Gnoll"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Gog"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Gorgon"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Green_Dragon"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Gremlin"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Griffin"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Harpy"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Hell_Hound"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Hydra"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Imp"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Inferno"/>
+        <NamedIndividual IRI="#Evil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Lizardman"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Mage"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Manticore"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Medusa"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Minotaur"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Monk"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Naga"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Pegasus"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Pikeman"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Pit_Fiend"/>
+        <NamedIndividual IRI="#Inferno"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Pixie"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Psychic_Elemental"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Rampart"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Red_Dragon"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Serpent_Fly"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Stone_Gargoyle"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Stone_Golem"/>
+        <NamedIndividual IRI="#Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Swordsman"/>
+        <NamedIndividual IRI="#Castle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_side"/>
+        <NamedIndividual IRI="#Tower"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Troglodyte"/>
+        <NamedIndividual IRI="#Dungeon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Unicorn"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Water_Elemental"/>
+        <NamedIndividual IRI="#Conflux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Wood_Elf"/>
+        <NamedIndividual IRI="#Rampart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Fraction"/>
+        <NamedIndividual IRI="#Wyvern"/>
+        <NamedIndividual IRI="#Fortress"/>
+    </ObjectPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_side"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_side"/>
+        <Class IRI="#fraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+        <Class IRI="#fraction_unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_side"/>
+        <Class IRI="#side"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#same_fraction_unit"/>
+        <Class IRI="#fraction_unit"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

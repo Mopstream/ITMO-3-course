@@ -1,0 +1,877 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dmitrydrobysh/ontologies/2023/8/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dmitrydrobysh/ontologies/2023/8/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/dmitrydrobysh/ontologies/2023/8/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racing_Team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_In_Team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DNF"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Event_In_Race"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Win_The_Race"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex_Albon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlphaTauri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alpine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carlos_Sainz_Jr."/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ERS_failure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Electrical_failure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Esteban_Ocon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ferrari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#George_Russell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kevin_Magnussen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lance_Stroll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lando_Norris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liam_Lawson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Logan_Sargeant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#McLaren"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercedes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nico_Hülkenberg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oscar_Piastri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pierre_Gasly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valtteri_Bottas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Williams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yuki_Tsunoda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zhou_Guanyu"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Alex_Albon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#AlphaTauri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Carlos_Sainz_Jr."/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ERS_failure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#Electrical_failure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Esteban_Ocon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#George_Russell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Haas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Kevin_Magnussen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Lance_Stroll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Lando_Norris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Liam_Lawson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Logan_Sargeant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Nico_Hülkenberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Oscar_Piastri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Pierre_Gasly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Race"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Valtteri_Bottas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racing_Team"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Yuki_Tsunoda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Racer"/>
+        <NamedIndividual IRI="#Zhou_Guanyu"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#AlphaTauri"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Haas"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Haas"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AlphaTauri"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Haas"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Alpine"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#Haas"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aston_Martin"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#ERS_failure"/>
+        <NamedIndividual IRI="#Electrical_failure"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#ERS_failure"/>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Electrical_failure"/>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ferrari"/>
+        <NamedIndividual IRI="#Haas"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ferrari"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ferrari"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ferrari"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Ferrari"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Haas"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Haas"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Haas"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Haas"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#McLaren"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#McLaren"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#McLaren"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Mercedes"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Mercedes"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Red_Bull"/>
+        <NamedIndividual IRI="#Williams"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Alex_Albon"/>
+        <NamedIndividual IRI="#Logan_Sargeant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Alex_Albon"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Alex_Albon"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Alex_Albon"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Carlos_Sainz_Jr."/>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Carlos_Sainz_Jr."/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+        <NamedIndividual IRI="#Ferrari"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Charles_Leclerc"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <NamedIndividual IRI="#ERS_failure"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <NamedIndividual IRI="#Electrical_failure"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Esteban_Ocon"/>
+        <NamedIndividual IRI="#Pierre_Gasly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Esteban_Ocon"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Esteban_Ocon"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+        <NamedIndividual IRI="#Lance_Stroll"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <NamedIndividual IRI="#Fernando_Alonso"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#George_Russell"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#George_Russell"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#George_Russell"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Kevin_Magnussen"/>
+        <NamedIndividual IRI="#Haas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Kevin_Magnussen"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Lance_Stroll"/>
+        <NamedIndividual IRI="#Aston_Martin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Lance_Stroll"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Lando_Norris"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+        <NamedIndividual IRI="#Mercedes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <NamedIndividual IRI="#Lewis_Hamilton"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Liam_Lawson"/>
+        <NamedIndividual IRI="#Yuki_Tsunoda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Liam_Lawson"/>
+        <NamedIndividual IRI="#AlphaTauri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Logan_Sargeant"/>
+        <NamedIndividual IRI="#Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Logan_Sargeant"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+        <NamedIndividual IRI="#AUSTRALIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <NamedIndividual IRI="#Mechanical_failure"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Nico_Hülkenberg"/>
+        <NamedIndividual IRI="#Kevin_Magnussen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Nico_Hülkenberg"/>
+        <NamedIndividual IRI="#Haas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Oscar_Piastri"/>
+        <NamedIndividual IRI="#Lando_Norris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Oscar_Piastri"/>
+        <NamedIndividual IRI="#McLaren"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DNF"/>
+        <NamedIndividual IRI="#Oscar_Piastri"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Pierre_Gasly"/>
+        <NamedIndividual IRI="#Alpine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+        <NamedIndividual IRI="#Max_Verstappen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+        <NamedIndividual IRI="#Red_Bull"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+        <NamedIndividual IRI="#BAHRAIN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <NamedIndividual IRI="#Sergio_Pérez"/>
+        <NamedIndividual IRI="#SAUDI_ARABIAN_GP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Valtteri_Bottas"/>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Yuki_Tsunoda"/>
+        <NamedIndividual IRI="#AlphaTauri"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <NamedIndividual IRI="#Zhou_Guanyu"/>
+        <NamedIndividual IRI="#Valtteri_Bottas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <NamedIndividual IRI="#Zhou_Guanyu"/>
+        <NamedIndividual IRI="#Alfa_Romeo"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Be_In_Team"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Win_The_Race"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DNF"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Be_A_Partner"/>
+        <Class IRI="#Racer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Be_In_Team"/>
+        <Class IRI="#Racing_Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Be_On_Podium"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Be_The_Second_In_Race"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Be_The_Third_In_Race"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DNF"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Event_In_Race"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Win_The_Race"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
