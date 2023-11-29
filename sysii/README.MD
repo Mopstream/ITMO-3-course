@@ -381,5 +381,5 @@ DTrees:
 В ходе выполнения ЛР 4-7 я освоил все основные принципы и методы работы с алгоритмами ML и необходимыми для их оценками методами. Более того, написал собственные реализации и сравнил с популярной библиотекой sklearn. 
 ## Приложения
 
-[Код](https://github.com/Mopstream/ITMO-3-course/tree/main/sysii
+[Код](https://github.com/Mopstream/ITMO-3-course/tree/main/sysii)
 
