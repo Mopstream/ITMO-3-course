@@ -1,4 +1,4 @@
-all: lib
+all:
 	gcc solution.c -fPIC -ldl -o solution
 
 lib:
