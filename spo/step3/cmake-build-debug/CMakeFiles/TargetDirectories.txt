@@ -1,0 +1,3 @@
+/home/mopstream/edu/itmo/spo/step3/cmake-build-debug/CMakeFiles/step3.dir
+/home/mopstream/edu/itmo/spo/step3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mopstream/edu/itmo/spo/step3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

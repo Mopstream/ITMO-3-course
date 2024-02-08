@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/lab7_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Statistics.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Statistics.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogisticRegression$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/LogisticRegression$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Normalizer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Main$Normalizer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Preprocessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Main$Preprocessor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Statistics$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Statistics$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogisticRegression.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/mopstream/edu/itmo/sysii/lab7/target/scala-2.13/classes/LogisticRegression.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
