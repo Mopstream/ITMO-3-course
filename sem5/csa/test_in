@@ -1,0 +1,13 @@
+let f1 = 1;
+  let f2 = 2;
+  let ans = f2;
+  let max = 4000000;
+  while( f1 + f2 < max ) {
+    let f3 = f1 + f2;
+    if (f3 % 2 == 0) {
+      ans = ans + f3;
+    }
+    f1 = f2;
+    f2 = f3;
+  }
+  print_int(ans);
