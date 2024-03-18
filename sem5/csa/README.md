@@ -206,7 +206,7 @@ print_int(ans);
 Было принято решение не разделять DataPath и ControlUnit на схеме из-за использования одной и той же памяти и там, и там, и неудобства
 изображения схемы.
 
-![img.png](schema.jpg)
+![img.png](schema.png)
 
 Модель процессора имеет 16 регистров:
 ```
@@ -320,32 +320,62 @@ next_symbol - ввести с устройства
   DEBUG emulator:simulation TICK: 331 PC:  11  MEM_OUT: r10 0 reg: 'r0': 0, 'r1': 0, 'r2': 0, 'r3': 0, 'r4': 17, 'r5': 0, 'r6': 0, 'r7': 0, 'r8': 0, 'r9': 13, 'r10': 12, 'r11': 30, 'r12': 100, 'r13': 11, 'r14': 16, 'r15': 4094 	  ('11'@Opcode.INC:Register.r10 0)
   DEBUG emulator:simulation TICK: 334 PC:  12  MEM_OUT: r12 r11 reg: 'r0': 0, 'r1': 0, 'r2': 0, 'r3': 0, 'r4': 17, 'r5': 0, 'r6': 0, 'r7': 0, 'r8': 0, 'r9': 13, 'r10': 13, 'r11': 30, 'r12': 100, 'r13': 12, 'r14': Register.r10, 'r15': 4094 	  ('12'@Opcode.LD:Register.r12 Register.r11)
 ```
-Интеграционные тесты реализованы тут [integration_test](./integration_test.py) в двух вариантах:
-
-- через golden tests, конфигурация которых лежит в папке [golden](./golden) (требуются по заданию).
+Интеграционные тесты реализованы в [integration_test](./integration_test.py) через golden tests, конфигурация которых лежит в папке [golden](./golden).
 
 CI:
 
 ``` yaml
-lab3-example:
-  stage: test
-  image:
-    name: ryukzak/python-tools
-    entrypoint: [""]
-  script:
-    - cd src/brainfuck
-    - poetry install
-    - coverage run -m pytest --verbose
-    - find . -type f -name "*.py" | xargs -t coverage report
-    - ruff format --check .
-    - ruff check .
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install poetry
+      run: pip install poetry
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
+        cache: "poetry"
+    - name: Install project
+      run: |
+        poetry install
+    - name: Lint with ruff
+      run: |
+        poetry run python -m ruff interpreter
+        poetry run python -m ruff machine
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install poetry
+      run: pip install poetry
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
+        cache: "poetry"
+    - name: Install project
+      run: |
+        poetry install
+    - name: Run tests
+      run: |
+        poetry run pytest . -v --update-goldens
+    needs: lint
 ```
-
-где:
-
-- `ryukzak/python-tools` -- docker образ содержит все необходимые для проверки утилиты. Подробнее: [Dockerfile](/src/Dockerfiles/python-tools.Dockerfile)
 - `poetry` -- управления зависимостями для языка программирования Python.
-- `coverage` -- формирование отчёта об уровне покрытия исходного кода.
 - `pytest` -- утилита для запуска тестов.
 - `ruff` -- утилита для форматирования и проверки стиля кодирования.
 

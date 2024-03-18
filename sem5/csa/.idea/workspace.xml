@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d5d17c-704f-4ca1-97ff-7b13e58b15eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../llp/llp-lab1" beforeDir="false" afterPath="$PROJECT_DIR$/../llp/llp-lab1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../llp/llp-lab3" beforeDir="false" afterPath="$PROJECT_DIR$/../llp/llp-lab3" afterDir="false" />
-    </list>
+    <list default="true" id="f3d5d17c-704f-4ca1-97ff-7b13e58b15eb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/mopstream/edu/itmo/sem5/csa/interpreter",
+    "last_opened_file_path": "/home/mopstream/Desktop/CSA3_simple-master./CSA3_simple-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,7 +41,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.emulator">
+  <component name="RunManager">
     <configuration name="emulator" type="PythonConfigurationType" factoryName="Python">
       <module name="csa" />
       <option name="ENV_FILES" value="" />
@@ -69,34 +66,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="translator" type="PythonConfigurationType" factoryName="Python">
-      <module name="csa" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interpreter" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpreter/translator.py" />
-      <option name="PARAMETERS" value="&quot;./../test_in&quot; &quot;./../test_out&quot;" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.translator" />
-      <item itemvalue="Python.emulator" />
-    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,6 +84,9 @@
       <updated>1708710962469</updated>
       <workItem from="1708710965536" duration="49000" />
       <workItem from="1708711022197" duration="9843000" />
+      <workItem from="1708741575076" duration="4400000" />
+      <workItem from="1709932648671" duration="4299000" />
+      <workItem from="1709978440489" duration="13000" />
     </task>
     <servers />
   </component>
