@@ -7,6 +7,7 @@
 """
 
 from random import randint, shuffle
+from PIL import Image
 
 
 class Answer:
@@ -102,9 +103,15 @@ class Question:
         return Question(n, type_, right, max_, value, question, description, answers)
 
 
-def ask(start, end, questions):
-    ind = randint(start, end)
+def ask(questions):
+    ind = randint(0, len(questions) - 1)
     q: Question = questions[ind]
+
+    if "<img" in q.question:
+        src = q.question[q.question.find("src='") + 5: q.question.find("'>")].replace("\\", "/").replace("JPG", "jpg")
+        src = "/home/mopstream/Downloads/Telegram Desktop/!_КС_Тест1/" + src
+        image = Image.open(src)
+        image.show()
 
     print(q.question)
     new_ans = q.answers.copy()
@@ -128,7 +135,7 @@ def ask(start, end, questions):
         print("Введите через пробел номера правильных вариантов")
 
         ans = list(map(int, input().split()))
-        if (len(ans) == q.right) and all(new_ans[x].num < q.right for x in ans):
+        if (len(ans) == q.right) and all(new_ans[x].num <= q.right for x in ans):
             print("вполне неплохо для долбаеба")
         else:
             print("вывести правильный ответ? (y/n)")
@@ -163,7 +170,7 @@ def ask(start, end, questions):
         ans = list(map(lambda x: x.split(), input().split(",")))
 
         if (len(ans) == len(new_ans)) and all(len(x) == 2 for x in ans) and all(
-                [fi[ans[i][0]], se[ans[i][1]]] in new_ans for i in range(len(ans))):
+                [fi[int(ans[i][0])], se[ord(ans[i][1]) - ord('a')]] in new_ans for i in range(len(ans))):
             print("вполне неплохо для долбаеба")
         else:
             print("вывести правильный ответ? (y/n)")
@@ -194,7 +201,9 @@ def main():
         # print(len(qs), qs[-1])
 
     while True:
-        ask(0, 1000, qs)
+        new_qs = qs[0:333] + qs[1168:]
+
+        ask(new_qs)
         print("#############################\n")
 
 
