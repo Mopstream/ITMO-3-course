@@ -84,7 +84,8 @@ class Question:
             raise Exception
 
         options = cls.read_block(f, "options")
-        if not options: return 0
+        if not options:
+            return 0
         n = read_opt(options, "n", 0)
         type_ = read_opt(options, "type", 1)
         right = read_opt(options, "right", 2)
@@ -103,7 +104,7 @@ class Question:
 
 def ask(start, end, questions):
     ind = randint(start, end)
-    q = questions[ind]
+    q: Question = questions[ind]
 
     print(q.question)
     new_ans = q.answers.copy()
@@ -141,7 +142,7 @@ def ask(start, end, questions):
 
         ans = list(map(int, input().split()))
         if (len(ans) == len(q.answers)) and all(
-                new_ans[ans[x]].text == q.question[x].text for x in range(len(q.answers))):
+                new_ans[ans[x]].text == q.answers[x].text for x in range(len(q.answers))):
             print("вполне неплохо для долбаеба")
         else:
             print("вывести правильный ответ? (y/n)")
@@ -161,7 +162,8 @@ def ask(start, end, questions):
 
         ans = list(map(lambda x: x.split(), input().split(",")))
 
-        if (len(ans) == len(new_ans)) and all(len(x) == 2 for x in ans) and all([fi[ans[i][0]], se[ans[i][1]]] in new_ans for i in range(len(ans))):
+        if (len(ans) == len(new_ans)) and all(len(x) == 2 for x in ans) and all(
+                [fi[ans[i][0]], se[ans[i][1]]] in new_ans for i in range(len(ans))):
             print("вполне неплохо для долбаеба")
         else:
             print("вывести правильный ответ? (y/n)")
@@ -186,7 +188,8 @@ def main():
     qs = []
     while True:
         q = Question.read(f)
-        if q == 0: break
+        if q == 0:
+            break
         qs.append(q)
         # print(len(qs), qs[-1])
 
