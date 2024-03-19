@@ -8,6 +8,7 @@
 
 from random import randint, shuffle
 from PIL import Image
+import os
 
 
 class Answer:
@@ -108,8 +109,12 @@ def ask(questions):
     q: Question = questions[ind]
 
     if "<img" in q.question:
-        src = q.question[q.question.find("src='") + 5: q.question.find("'>")].replace("\\", "/").replace("JPG", "jpg")
+        src = q.question[q.question.find("src='") + 5: q.question.find("'>")].replace("\\", "/")
         src = "/home/mopstream/Downloads/Telegram Desktop/!_КС_Тест1/" + src
+        if not os.path.exists(src):
+            src = src.replace("JPG", "jpg").replace("PNG", "png")
+        if not os.path.exists(src):
+            src = src.replace("jpg", "JPG").replace("png", "PNG")
         image = Image.open(src)
         image.show()
 
