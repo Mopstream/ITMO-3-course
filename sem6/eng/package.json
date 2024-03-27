@@ -1,0 +1,30 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec \"eslint . && node index.js\"",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fastify": "^3.14.1",
+    "fastify-cors": "^6.0.1",
+    "fastify-easy-route": "^1.0.12",
+    "fastify-formbody": "^5.0.0",
+    "fastify-rate-limit": "^5.5.0",
+    "mongodb": "^3.6.9",
+    "node-fetch": "^2.6.1",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1"
+  }
+}

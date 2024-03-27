@@ -1,0 +1,6 @@
+node_modules
+.vscode
+log
+log/06.04.2021.log
+log.log
+.env
