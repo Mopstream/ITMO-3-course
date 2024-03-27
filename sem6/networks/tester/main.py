@@ -106,6 +106,7 @@ class Question:
 
 def ask(questions):
     ind = randint(0, len(questions) - 1)
+    print(f"{ind}: ", end=" ")
     q: Question = questions[ind]
 
     if "<img" in q.question:
@@ -127,13 +128,15 @@ def ask(questions):
             print(i, new_ans[i].text)
         print("Введите число - номер ответа")
 
-        i = int(input())
-        if new_ans[i].num == 1:
-            print("вполне неплохо для долбаеба")
-        else:
-            print("вывести правильный ответ? (y/n)")
-            if input() == "y":
-                print(q.answers[0].text)
+        i = input()
+        if i:
+            i = int(i)
+            if new_ans[i].num == 1:
+                print("вполне неплохо для долбаеба")
+                return
+        print("вывести правильный ответ? (y/n)")
+        if input() == "y":
+            print(q.answers[0].text)
     elif q.type_ == 2:
         for i in range(len(new_ans)):
             print(i, new_ans[i].text)
@@ -206,11 +209,30 @@ def main():
         # print(len(qs), qs[-1])
 
     while True:
-        new_qs = qs[0:333] + qs[1168:]
-
+        this_qs = qs[0:333] + qs[1168:]
+        new_qs = this_qs
+        #start = 203  # len(this_qs)
+        #for i in range(start - 1, -1, -1):
+        #    new_qs = [this_qs[i]]
         ask(new_qs)
         print("#############################\n")
 
 
 if __name__ == "__main__":
     main()
+
+
+# -364 -340
+
+# PAM-5 MLT-3 NRZ RZ AMI M2 NRZI
+
+# формулы
+# изучить 259 -256
+
+# механизм окна
+
+#методы маршрутизации 153 - 140
+
+#коммутация 139- 118
+
+#LLC
