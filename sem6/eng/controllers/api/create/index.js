@@ -1,3 +1,5 @@
+const sign = require("../../../module/sign");
+const MongoClient = require('mongodb').MongoClient;
 const fetch = require('node-fetch');
 const getUser = require('../../../module/getUser');
 
@@ -29,6 +31,42 @@ function isValidBody(obj) {
   return true
 }
 
+function pingStatsVK(request) {
+
+  let vk_url = "https://prod-app7766223-5af7e06e83c1.pages-ac.vk-apps.com/index.html?" + request.headers.xvk;
+
+
+  const events = [
+    {
+      user_id: request.sign.vk_user_id,
+      event: 'vkup_event_action',
+      mini_app_id: request.sign.vk_app_id,
+      type: 'type_action',
+      type_action: {
+        type: 'type_mini_app_custom_event_item',
+      },
+      url: vk_url,
+      vk_platform: request.sign.vk_platform,
+      screen: 'none',
+      json: JSON.stringify({
+        event_id: 'track_done'
+      }),
+    }
+  ];
+
+  const url = new URL('https://api.vk.com/method/statEvents.addMiniAppsCustom');
+  url.searchParams.append('access_token', process.env.SERVICE_KEY);
+  url.searchParams.append('v', '5.131');
+  url.searchParams.append('events', JSON.stringify(events));
+
+  // fetch(url.href).catch(() => null);
+  fetch(url.href)
+    .then(response => response.text())
+    .then(text => JSON.parse(text))
+    .then(json => console.log(json));
+}
+
+
 
 module.exports = {
   method: "POST",
@@ -39,6 +77,9 @@ module.exports = {
     }
   },
   async execute(fastify, request, reply) {
+    // try {
+
+
 
     if (request.sign.vk_user_id == undefined) {
       reply
@@ -61,8 +102,11 @@ module.exports = {
       return
     }
 
+
+
     const db = fastify.mongo.db('bingo')
     const bingos = db.collection('bingos');
+    const users = db.collection('users');
 
     let author = await getUser(request.sign.vk_user_id)
     bingos.insertOne({
@@ -79,16 +123,24 @@ module.exports = {
       created: Number(new Date())
     })
       .then(result => {
+        // console.log(result);
+        pingStatsVK(request);
         reply
           .code(201)
           .header('Content-Type', 'application/json; charset=utf-8')
           .send(result?.insertedId);
       })
-      .catch(error => {
-        reply
-          .code(500)
-          .header('Content-Type', 'application/json; charset=utf-8')
-          .send(error);
-      });
+
+
+
+
+
+    // }
+    // catch (error) {
+    //   reply
+    //     .code(418)
+    //     .header('Content-Type', 'application/json; charset=utf-8')
+    //     .send(error);
+    // }
   }
 }

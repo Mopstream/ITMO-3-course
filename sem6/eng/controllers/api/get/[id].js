@@ -1,5 +1,8 @@
 const sign = require("../../../module/sign");
+const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
+
+//get bingo by mongoid
 
 module.exports = {
   method: "GET",
@@ -11,11 +14,9 @@ module.exports = {
   },
   async execute(fastify, request, reply) {
 
-    
-
-
     try {
       let id = request.params?.id;
+      // console.log(id);
       if (sign(request.headers?.xvk) == undefined) {
         reply
           .code(403)

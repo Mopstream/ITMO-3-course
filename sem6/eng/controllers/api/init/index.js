@@ -1,3 +1,5 @@
+const sign = require("../../../module/sign");
+
 module.exports = {
   method: "GET",
   config: {
