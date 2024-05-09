@@ -7,11 +7,11 @@ class FuncSystem(
     private val logFunc: LogarithmPart
 ) : MathFunc {
 
-    override fun calculate(x: Double): Double {
-        return if (x <= 0) {
+    override fun calculate(x: Double): Double =
+        if (x <= 0) {
             trigFunc.calculate(x)
         } else {
             logFunc.calculate(x)
         }
-    }
+
 }

@@ -32,6 +32,8 @@ class FunctionSystemTest {
             Mockito.`when`(logPart.calculate(Double.NaN)).thenReturn(Double.NaN)
             Mockito.`when`(logPart.calculate(Double.POSITIVE_INFINITY)).thenReturn(Double.NaN)
 
+            Mockito.doReturn(-1).`when`(logPart).calculate(Mockito.eq(12.0))
+
             Mockito.`when`(trigPart.calculate(0.0)).thenThrow(java.lang.IllegalArgumentException::class.java)
             Mockito.`when`(trigPart.calculate(-Math.PI / 6)).thenReturn(5.1366075)
             Mockito.`when`(trigPart.calculate(-Math.PI / 4)).thenReturn(15.658639)
