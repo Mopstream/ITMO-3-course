@@ -1,12 +1,13 @@
 `timescale 1ns / 1ps
 
 module adder(
-    input wire [7:0] a,
-    input wire [7:0] b,
+    input wire [15:0] a,
+    input wire [15:0] b,
 
-    output wire [8:0] res
+    output wire [15:0] res
 );
 
+assign res = a + b;
 
 
 endmodule

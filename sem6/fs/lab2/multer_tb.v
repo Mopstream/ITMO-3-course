@@ -1,5 +1,4 @@
 `timescale 1ns / 1ps
-`include "multer.v"
 
 module mult_tb();
 
@@ -24,13 +23,13 @@ wire [15:0] out;
 wire out_busy;
 
 multer mul_inst(
-    .clk_i(clk),
-    .rst_i(in_rst),
-    .a_bi(in_a),
-    .b_bi(in_b),
-    .start_i(start),
-    .busy_o(out_busy),
-    .y_bo(out)
+    .clk(clk),
+    .rst(in_rst),
+    .a(in_a),
+    .b(in_b),
+    .start(start),
+    .busy(out_busy),
+    .y(out)
 );
 
 assign is_end_i = (i == 256);

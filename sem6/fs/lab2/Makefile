@@ -1,6 +1,6 @@
 
-MAIN=cqrt_tb.v
+MAIN=func_tb.v
 
 all:
 	iverilog -o main_test.vvp ${MAIN}
-	vvp main_test.vvp
+	vvp -n main_test.vvp

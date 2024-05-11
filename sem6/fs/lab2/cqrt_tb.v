@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-`include "cqrt.v"
 `include "adder.v"
+`include "cqrt.v"
 
 module cqrt_tb();
 
@@ -20,11 +20,11 @@ wire is_end_i;
 reg [7:0] a;
 reg start, rst;
 
-wire [2:0] out;
+wire [3:0] out;
 wire out_busy;
 
-reg [7:0] sum_a, sum_b;
-wire [7:0] sum_res;
+wire [7:0] sum_a, sum_b;
+wire [8:0] sum_res;
 
 adder sum(
     .a(sum_a),
@@ -42,19 +42,20 @@ cqrt cqrt(
     .busy(out_busy),
 
     .sum_out(sum_res),
-    .sum_a(sum_a),
-    .sum_b(sum_b)
+    .sum_a_w(sum_a),
+    .sum_b_w(sum_b)
 );
 
 assign is_end_i = (i == 256);
 
-localparam PREPARE = 3'd0;
-localparam CYCLE_I = 3'd1;
-localparam NEXT_I = 3'd3;
-localparam BODY = 3'd4;
-localparam BODY_1 = 3'd5;
-localparam BODY_2 = 3'd6;
-localparam BODY_3 = 3'd7;
+localparam PREPARE = 4'd0;
+localparam CYCLE_I = 4'd1;
+localparam NEXT_I = 4'd3;
+localparam BODY = 4'd4;
+localparam BODY_1 = 4'd5;
+localparam BODY_2 = 4'd6;
+localparam BODY_3 = 4'd7;
+localparam BODY_4 = 4'd8;
 
 
 reg [3:0] state = PREPARE;
@@ -102,13 +103,14 @@ always @(posedge clk) begin
             begin
                 lower <= out * out * out;
                 upper <= (out + 1) * (out + 1) * (out + 1);
+                state <= BODY_4;
             end
         BODY_4:
             begin
                 if (lower <= i && upper > i) begin
-                    $display("Correct! a = %0d, y = %0d, lower = %0d, upper = %0d", a, out, lower. upper);
+                    $display("Correct! a = %0d, y = %0d, lower = %0d, upper = %0d", a, out, lower, upper);
                 end else begin
-                    $display("Incorrect! a = %0d, y = %0d, lower = %0d, upper = %0d", a, out, lower. upper);
+                    $display("Incorrect! a = %0d, y = %0d, lower = %0d, upper = %0d", a, out, lower, upper);
                 end
                 state <= NEXT_I;
             end
